@@ -59,4 +59,4 @@ bash "${STEAMAPPDIR}/srcds_run" -game "${STEAMAPP}" -console -autoupdate \
                         +servercfgfile "${SRCDS_CFG}" \
                         +mapcyclefile "${SRCDS_MAPCYCLE}" \
                         ${SERVER_SECURITY_FLAG} \
-                        ${REPLAY_FLAG}
+                        ${REPLAY_FLAG} "$@"
