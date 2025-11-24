@@ -19,7 +19,7 @@ RUN set -x \
 	&& apt-get update \
 	&& apt-get install -y --no-install-recommends --no-install-suggests \
 		wget=1.21.3-1+deb12u1 \
-		ca-certificates=20230311 \
+		ca-certificates=20230311+deb12u1 \
 		lib32z1=1:1.2.13.dfsg-1 \
 		libncurses5:i386=6.4-4 \
 		libbz2-1.0:i386=1.0.8-5+b1 \
@@ -61,6 +61,7 @@ ENV SRCDS_FPSMAX=300 \
 	SRCDS_CFG="server.cfg" \
 	SRCDS_MAPCYCLE="mapcycle.txt" \
 	SRCDS_SECURED=1 \
+	SRCDS_SDR_FAKEIP=0 \
 	SRCDS_REPLAY=0
 
 # Switch to user
